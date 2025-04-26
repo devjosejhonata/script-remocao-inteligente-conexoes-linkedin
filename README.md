@@ -37,14 +37,14 @@ Este script foi desenvolvido para ajudar na **gestão da sua rede de conexões n
 Para personalizar a filtragem para manter e remover conexões, só modificar as consts abaixo, a const de manter e a const de remover:
 
 const keywordsToRemove = []; // ex: 
-// Conexões com as chaves vazias, será removido todas as conexões que nao estao na const para manter, conexões termos inseridos dentro serão removidas, ex ["estagiário", "freelancer", "junior"] .
+// Conexões com as chaves vazias, será removido todas as conexões que nao estao na const para manter, conexões termos inseridos dentro serão removidas, ex ["Marketing", "Vendas"] .
 
 const keywordsToKeep = ["gestor", "diretor"]; 
 // Conexões com estes termos serão mantidas
 
 🧠 Exemplo de uso:
 - Conexões com o título: "Diretor de Operações" → Mantidas ✅
-- Conexões com o título: "Estagiário de Marketing" → Candidatas à remoção ❌
+- Conexões com o título: "Marketing" ou "Vendas" → Candidatas à remoção ❌
 - Conexões com o título: "Consultor" (sem palavra-chave de manutenção) → Candidata à remoção ❌
 
 ⚠️ Aviso:
